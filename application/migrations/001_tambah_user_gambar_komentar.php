@@ -37,7 +37,11 @@ class Migration_Tambah_User_Gambar_Komentar extends CI_Migration {
                                 'url' => array(
                                         'type' => 'TEXT',
                                         'constraint' => '100'
-                                )
+                                ),
+                                'keterangan' => array(
+                                        'type' => 'TEXT',
+                                        'constraint' => '255'
+                                ),
                         ));
                         $this->dbforge->add_key('gambar_id', TRUE);
                         $this->dbforge->create_table('gambar');

@@ -17,26 +17,20 @@
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
-</div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+  <a class="navbar-brand" href="#">Indtagram</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
+
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Login</a>
       </li>
     </ul>
   </div>
@@ -45,24 +39,33 @@
 <div class="container" style="margin-top:30px">
   <div class="row">
 
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
+    <div class="col-md-6 offset-md-3">
+				<br>
+      <div class="img">
+				<img src="https://appharbor.com/assets/images/stackoverflow-logo.png" alt="..." class="img-thumbnail">
+			</div>
+			<br>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
+			<hr style="height:1px; border:none; color:#000; background-color:#000;">
+			<p>Komentar:</p>
+			<p>Afiq: Wah keren kak</p>
+			<hr>
+			<br>
+			<div class="img">
+				<img src="https://appharbor.com/assets/images/stackoverflow-logo.png" alt="..." class="img-thumbnail">
+			</div>
+			<br>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			<hr style="height:1px; border:none; color:#000; background-color:#000;">
+			<p>Komentar:</p>
+			<p>Afiq: Wah keren kak</p>
+			<hr>
     </div>
   </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Indtagram tempat kamu berbagi cerita melalui gambar</p>
+  <p>Indtagram adalah tempat kamu berbagi cerita melalui gambar</p>
 </div>
 
 </body>

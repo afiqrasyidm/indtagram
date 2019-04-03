@@ -22,12 +22,12 @@ class Images extends CI_Controller {
 	{
 					$this->load->view('partials/header');
 					$this->load->view('images/upload');
-				
+
 	}
-  public function detail()
+  public function detail($id)
   {
           $this->load->view('partials/header');
-          $this->load->view('images/detail');
+          $this->load->view('images/detail', $id);
           $this->load->view('partials/footer');
   }
 }

@@ -7,7 +7,7 @@
     <!-- Icon -->
     <div class="fadeIn first">
       <br>
-      <h4> Indtagram </h4>
+      <h4> Indtagram - Sebuah Website Mirip Instagram</h4>
       <br>
     </div>
 

@@ -20,7 +20,7 @@
 
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-  <a class="navbar-brand" href="#">Indtagram</a>
+  <a class="navbar-brand" href="<?php echo site_url('home/index'); ?>">Indtagram</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,13 +28,13 @@
     <ul class="navbar-nav">
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link" href="<?php echo site_url('user/register'); ?>">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="<?php echo site_url('user/login'); ?>">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Upload Foto</a>
+        <a class="nav-link" href="">Upload Foto</a>
       </li>
     </ul>
   </div>

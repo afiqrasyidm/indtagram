@@ -11,11 +11,15 @@
       <br>
     </div>
 
+
+    <?php echo form_error('email'); ?>
+    <?php echo form_error('password'); ?>
+    <?php echo form_error('passconf'); ?>
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="email">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="konfirmasi password">
+    <?php echo form_open('User/register'); ?>
+      <input type="text" id="email" class="fadeIn second" name="email"   placeholder="email">
+      <input type="text" id="password" class="fadeIn third" name="password"  placeholder="password">
+      <input type="text" id="passconf" class="fadeIn third" name="passconf" placeholder="konfirmasi password">
       <input type="submit" class="fadeIn fourth" value="Register">
 
     </form>

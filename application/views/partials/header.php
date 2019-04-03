@@ -27,12 +27,29 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('user/register'); ?>">Register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('user/login'); ?>">Login</a>
-      </li>
+
+      <?php
+      session_start();
+      if( isset($_SESSION["email_user"]) ){
+
+              echo "<li class='nav-item'>
+                      <a class='nav-link'>Hai ".$_SESSION["email_user"]."!</a>
+                    </li>
+                    <li class='nav-item'>
+                      <a class='nav-link'  href='". site_url('user/logout'). "' >Logout</a>
+                    </li>";
+      }
+      else{
+        echo "<li class='nav-item'>
+                <a class='nav-link'  href='". site_url('user/register'). "' >Register</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='". site_url('user/login'). "' >Login</a>
+              </li>";
+
+      }?>
+
+
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('gambar/upload'); ?>">Upload Gambar</a>
       </li>

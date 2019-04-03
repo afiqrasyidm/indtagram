@@ -34,7 +34,7 @@
         <a class="nav-link" href="<?php echo site_url('user/login'); ?>">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('images/upload'); ?>">Upload Foto</a>
+        <a class="nav-link" href="<?php echo site_url('gambar/upload'); ?>">Upload Gambar</a>
       </li>
     </ul>
   </div>

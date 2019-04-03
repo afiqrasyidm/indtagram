@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Images extends CI_Controller {
+class Gambar extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,13 +21,13 @@ class Images extends CI_Controller {
 	public function upload()
 	{
 					$this->load->view('partials/header');
-					$this->load->view('images/upload');
+					$this->load->view('gambar/upload');
 
 	}
   public function detail($id)
   {
           $this->load->view('partials/header');
-          $this->load->view('images/detail', $id);
+          $this->load->view('gambar/detail', $id);
           $this->load->view('partials/footer');
   }
 }

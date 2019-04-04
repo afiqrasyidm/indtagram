@@ -17,10 +17,13 @@ class User_model extends CI_Model {
 			);
 
       session_start();
+      $this->db->insert('users', $data);
       $_SESSION["email_user"] = $this->input->post('email');
+      $_SESSION["user_id"] =  $this->db->insert_id();
 
-			return $this->db->insert('users', $data);
-		}
+			return true;
+
+    }
 
     public function login(){
 
@@ -37,6 +40,8 @@ class User_model extends CI_Model {
       else{
         session_start();
         $_SESSION["email_user"] = $data['user']['email'];
+        $_SESSION["user_id"] = $data['user']['user_id'];
+
         return true;
       }
 

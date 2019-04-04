@@ -6,10 +6,10 @@
 <br>
 <div class="col-md-6 offset-md-3">
   <div class="img">
-     <img src="https://appharbor.com/assets/images/stackoverflow-logo.png" alt="..." class="img-thumbnail">
+     <img src="<?php echo base_url('gambar/'.$file_name);?>" alt="..." class="img-thumbnail">
+
   </div>
   <br>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   <hr style="height:1px; border:none; color:#000; background-color:#000;">
   <p>Komentar:</p>
   <p>Afiq: Wah keren kak</p>

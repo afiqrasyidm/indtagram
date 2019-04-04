@@ -58,8 +58,11 @@ class Gambar extends CI_Controller {
 	}
   public function detail($id)
   {
+
+					$data = $this->gambar_model->get($id);
+					
           $this->load->view('partials/header');
-          $this->load->view('gambar/detail', $id);
+          $this->load->view('gambar/detail', $data);
           $this->load->view('partials/footer');
   }
 }

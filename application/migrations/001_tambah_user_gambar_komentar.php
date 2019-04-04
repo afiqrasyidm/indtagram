@@ -39,7 +39,7 @@ class Migration_Tambah_User_Gambar_Komentar extends CI_Migration {
                                         'constraint' => 5,
                                         'unsigned' => TRUE
                                 ),
-                                'url' => array(
+                                'file_name' => array(
                                         'type' => 'TEXT',
                                         'constraint' => '100'
                                 ),

@@ -14,7 +14,7 @@ class Gambar_model extends CI_Model {
 
 			$data = array(
 				'user_id' =>   $_SESSION["user_id"],
-				'url' => $data["full_path"]
+				'file_name' => $data["file_name"]
 			);
       $this->db->insert('gambar', $data);
 
@@ -22,7 +22,19 @@ class Gambar_model extends CI_Model {
 
     }
 
+    public function get($id){
 
+      $query = $this->db->get_where('gambar', array( 'gambar_id' => $id));
+
+      return $query->row_array();
+
+    }
+
+    public function get_all(){
+
+            $query = $this->db->get('gambar');
+            return $query->result_array();
+    }
 
 
 }

@@ -8,6 +8,7 @@ class User extends CI_Controller {
                 parent::__construct();
                 $this->load->model('user_model');
                 $this->load->helper('url_helper');
+								session_start();
         }
 	/**
 	 * Index Page for this controller.

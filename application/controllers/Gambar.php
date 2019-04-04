@@ -21,10 +21,14 @@ class Gambar extends CI_Controller {
 
 	 function __construct(){
  			parent::__construct();
+			$this->load->model('gambar_model');
+			$this->load->helper('url_helper');
  		  $this->load->helper(array('form', 'url'));
- 	}
+			session_start();
+	}
 	public function upload()
 	{
+		if( isset($_SESSION["email_user"]) ){
 
 
 					$config['upload_path']          = './gambar/';
@@ -41,9 +45,15 @@ class Gambar extends CI_Controller {
 						$this->load->view('gambar/upload', $error);
 
 					}else{
+
+							$this->gambar_model->create($this->upload->data());
 							redirect('Home');
 					}
+		}
+		else{
+			redirect('Home');
 
+		}
 
 	}
   public function detail($id)

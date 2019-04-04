@@ -34,13 +34,14 @@ class Migration_Tambah_User_Gambar_Komentar extends CI_Migration {
                                         'unsigned' => TRUE,
                                         'auto_increment' => TRUE
                                 ),
+                                'user_id' => array(
+                                        'type' => 'INT',
+                                        'constraint' => 5,
+                                        'unsigned' => TRUE
+                                ),
                                 'url' => array(
                                         'type' => 'TEXT',
                                         'constraint' => '100'
-                                ),
-                                'keterangan' => array(
-                                        'type' => 'TEXT',
-                                        'constraint' => '255'
                                 ),
                         ));
                         $this->dbforge->add_key('gambar_id', TRUE);

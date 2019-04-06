@@ -5,25 +5,22 @@
 
     <div class="col-md-6 offset-md-3">
 				<br>
-      <div class="img">
-				<a href="<?php echo site_url('gambar/detail/1'); ?>"> <img src="https://appharbor.com/assets/images/stackoverflow-logo.png" alt="..." class="img-thumbnail"> </a>
-			</div>
-			<br>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<hr style="height:1px; border:none; color:#000; background-color:#000;">
-			<p>Komentar:</p>
-			<p>Afiq: Wah keren kak</p>
-			<hr>
-			<br>
-			<div class="img">
-				<img src="https://appharbor.com/assets/images/stackoverflow-logo.png" alt="..." class="img-thumbnail">
-			</div>
-			<br>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<hr style="height:1px; border:none; color:#000; background-color:#000;">
-			<p>Komentar:</p>
-			<p>Afiq: Wah keren kak</p>
-			<hr>
+    <?php foreach ($datas_gambar as $data_gambar): ?>
+
+        <div class="img">
+          <p> Diupload oleh:    <p><?php echo $data_gambar['email']; ?></p> </p>
+                <a href="<?php echo site_url('gambar/detail/'.$data_gambar['gambar_id']); ?>"> <img src="<?php echo base_url('gambar/'.$data_gambar['file_name']);?>" alt="..." class="img-thumbnail"> </a>
+
+            <br>
+  			</div>
+        <br>
+        <br>
+        <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+        <br>
+        <br>
+
+    <?php endforeach; ?>
+
     </div>
   </div>
 </div>

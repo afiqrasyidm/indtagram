@@ -32,8 +32,12 @@ class Gambar_model extends CI_Model {
 
     public function get_all(){
 
-            $query = $this->db->get('gambar');
-            return $query->result_array();
+            $this->db->select('*');
+            $this->db->from('gambar');
+            $this->db->join('users', 'users.user_id = gambar.user_id');
+            $query = $this->db->get();
+            return $query->result_array();;
+
     }
 
 

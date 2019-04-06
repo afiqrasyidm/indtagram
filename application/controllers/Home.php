@@ -6,6 +6,8 @@ class Home extends CI_Controller {
 	public function __construct()
 	{
 					parent::__construct();
+					$this->load->model('gambar_model');
+					$this->load->helper('url_helper');
 					session_start();
 	}
 	/**
@@ -25,8 +27,10 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+					$data["datas_gambar"] = $this->gambar_model->get_all();
+
 					$this->load->view('partials/header');
-					$this->load->view('index');
+					$this->load->view('index', $data);
 					$this->load->view('partials/footer');
 
 	}

@@ -30,7 +30,7 @@ class Komentar_model extends CI_Model {
 
       $query = $this->db->get_where('komentar', array( 'gambar_id' => $id_gambar));
 
-      return $query->row_array();
+      return $query->result_array();
 
     }
 

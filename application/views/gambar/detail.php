@@ -16,6 +16,7 @@
   <?php foreach ($komentar_data as $komentar): ?>
 
           <p><?php echo $komentar['komentar']; ?></p>
+          <hr style="height:1px; border:none; color:#000; background-color:#000;">
 
   <?php endforeach; ?>
 

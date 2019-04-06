@@ -35,6 +35,6 @@ class Gambar_model extends CI_Model {
             $query = $this->db->get('gambar');
             return $query->result_array();
     }
- 
+
 
 }

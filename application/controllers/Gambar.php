@@ -22,6 +22,7 @@ class Gambar extends CI_Controller {
 	 function __construct(){
  			parent::__construct();
 			$this->load->model('gambar_model');
+			$this->load->model('komentar_model');
 			$this->load->helper('url_helper');
  		  $this->load->helper(array('form', 'url'));
 			session_start();
@@ -60,7 +61,9 @@ class Gambar extends CI_Controller {
   {
 
 					$data = $this->gambar_model->get($id);
-					
+					$data['id'] = $id;
+					$data['komentar_data'] = $this->komentar_model->get_dengan_id_gambar($id);
+
           $this->load->view('partials/header');
           $this->load->view('gambar/detail', $data);
           $this->load->view('partials/footer');

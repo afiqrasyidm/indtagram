@@ -12,11 +12,18 @@
   <br>
   <hr style="height:1px; border:none; color:#000; background-color:#000;">
   <p>Komentar:</p>
-  <p>Afiq: Wah keren kak</p>
+
+  <?php foreach ($komentar_data as $komentar): ?>
+
+          <p><?php echo $komentar['komentar']; ?></p>
+
+  <?php endforeach; ?>
+
+
   <hr>
   <br>
-  <form method="post">
-    <textarea id="summernote" name="editordata"></textarea>
+  <?php echo form_open('Komentar/create/'.$id); ?>
+    <textarea id="summernote" name="komentar"></textarea>
   <br>
   <br>
 

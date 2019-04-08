@@ -20,6 +20,7 @@ class Gambar extends CI_Controller {
 	 */
 	public function upload()
 	{
+				   $this->load->helper('url');
 					$this->load->view('partials/header');
 					$this->load->view('gambar/upload');
 

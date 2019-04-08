@@ -1,5 +1,5 @@
 <link rel = "stylesheet" type = "text/css" href ="<?php echo base_url('assets/css/upload.css');?>">
-<script src="<?php echo base_url('assets/css/upload.js');?>"> </script>
+<script src="<?php echo base_url('assets/js/upload.js');?>"> </script>
 <div>
   <form action="upload.php" method="POST">
     <input type="file" multiple>
